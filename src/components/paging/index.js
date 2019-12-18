@@ -72,11 +72,9 @@ export default class Paging extends React.Component {
           );
         }
       } else {
-        for (
-          let i = currentPage - 9 + (totalPage - currentPage);
-          i <= totalPage;
-          i++
-        ) {
+        let startIdx = currentPage - 9 + (totalPage - currentPage);
+        if (startIdx < 1) startIdx = 1;
+        for (let i = startIdx; i <= totalPage; i++) {
           paging.push(
             i === currentPage ? (
               <div key={i} className="current-page">{i}</div>
