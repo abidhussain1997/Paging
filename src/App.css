@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  margin-top: 25%;
+  transform: translateY(-50%);
+}
+
+.current-page{
+  color: red;
+}
+
+.paging-container > div {
+  display: inline-block;
+  margin: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)
+}
+
+.totalpage-input{
+  margin-top: 16px;
+  height: 20px;
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+input:focus {
+  outline-width: 0;
+}
